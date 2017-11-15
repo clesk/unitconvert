@@ -1,7 +1,10 @@
+#test program for unitconvert module
+#first import unitconvert modules and pytest
 from unitconvert import temperature
 from unitconvert import distance
 import pytest
 
+#define the test function
 def test_unitconvert():
 	
 	#test a few temp conversions rounded to tolerance
@@ -19,6 +22,7 @@ def test_unitconvert():
 		distance.miles_to_kilometers(1, 2)
 		temperature.celsius_to_fahrenheit(1, 2)
 
+	#make sure it won't take a string
 	with pytest.raises(TypeError):
 		temperature.fahrenheit_to_celsius('x')
 		distance.kilometers_to_miles('x')
