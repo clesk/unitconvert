@@ -1,7 +1,7 @@
 #test program for unitconvert module
 #first import unitconvert modules and pytest
-from unitconvert import unitconvert.temperature
-from unitconvert import unitconvert.distance
+from unitconvert import temperature
+from unitconvert import distance
 import pytest
 
 #define the test function
